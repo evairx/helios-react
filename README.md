@@ -1,8 +1,7 @@
 
-# react-helios
+# Helios React
 
 > Helios is a simple React slider developed by evairx, it can be
-
 > customized.
 
 # [Documentation](https://evairx.github.io/helios/)
@@ -10,15 +9,15 @@
 ## step 1 - installation
 
 ```bash
-npm install react-helios
+npm install helios-react@lasted
 ```
   
 
 ## step 2 - import the component
 
 ```JSX
-import Helios from "react-helios";
-import "react-helios/dist/helios.min.css";
+import Helios from "helios-react";
+import "helios-react/dist/helios.min.css";
 ```
 
 ## step 3 - use it
