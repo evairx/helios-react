@@ -2,7 +2,9 @@
     <h1 class="title">Helios React</h1>
     <p class="subtitle">What is this?, is an easy to use and customizable slider for React</p>
 
-    ```bash title="Install Helios React"
+    <h3>Install Helios React</h3>
+
+    ```bash title="BASH"
     npm install helios-react@lasted 
     ```
 

@@ -1,0 +1,22 @@
+{
+  "name": "react-helios-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/helios.jsx",
+  "scripts": {
+    "build": "npx babel src -d dist && npx postcss dist/styles/*.css --output dist/styles --config postcss.config.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "babel-cli": "^6.26.0",
+    "cssnano": "^5.0.7",
+    "install": "^0.13.0",
+    "postcss": "^8.3.11"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

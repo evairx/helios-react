@@ -11,22 +11,22 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
     <TabItem value="npm" label="NPM" default>
-        ```npm title="TERMINAL"
+        ```bash title="BASH"
         npm install helios-react@lasted
         ```
     </TabItem>
     <TabItem value="pnpm" label="PNPM">
-        ```bash title="TERMINAL"
+        ```bash title="BASH"
         pnpm install helios-react@lasted
         ```
      </TabItem>
     <TabItem value="yarn" label="YARN">
-        ```bash title="TERMINAL"
+        ```bash title="BASH"
         yarn install helios-react@lasted
         ```
     </TabItem>
     <TabItem value="bun" label="BUN">
-        ```bash title="TERMINAL"
+        ```bash title="BASH"
         bun install helios-react@lasted
         ```
   </TabItem>
