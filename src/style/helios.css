@@ -1,0 +1,117 @@
+.helios-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 100px;
+}
+
+.helios-container-custom {
+    position: relative;
+    overflow: hidden;
+    min-height: 100px;
+}
+
+.helios-inner {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.helios-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    transition: opacity .5s ease-in-out;
+}
+
+.helios-prev {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+    transform: translateY(-50%);
+}
+
+.helios-next {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+    transform: translateY(-50%);
+}
+
+.helios-prev:hover, .helios-next:hover {
+    opacity:1;
+}
+
+
+.helios-indicator {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.helios-page {
+    width: 25px;
+    height: 7px;
+    border-radius: 8px;
+    background-color: #747474;
+    opacity: 0.5;
+    margin: 0 5px;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+    position: relative;
+}
+
+.helios-page:hover {
+    opacity: 1;
+    background-color: #ffffff;
+}
+
+.helios-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: width 0.3s ease-out;
+}
+
+.helios-page.active {
+    transition: all 0.3s ease-out;
+    width: 45px;
+    background-color:var(--helios-indicator-active); 
+    opacity: 1;
+    overflow:hidden;
+}
+
+.helios-page.active::before {
+    width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+    .helios-container {
+        height: 100vw;
+    }
+}
+  
+@media screen and (max-width: 485px) {
+    .helios-container {
+        height: 120vw;
+    }
+}
+  
+@media screen and (max-width: 390px) {
+    .helios-container {
+        height: 140vw;
+    }
+}

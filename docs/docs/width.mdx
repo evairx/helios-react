@@ -1,0 +1,33 @@
+---
+sidebar_position: 6
+---
+import ExampleWith from "../src/components/exampleDots";
+
+# Width
+
+<ExampleWith/>
+<br/>
+
+```jsx title="exampleWith.jsx" {6}
+export default function Example() {
+    return (
+        <Helios
+            infinite={true}
+            dots={true}
+            width="500px"
+        >
+            <div className="box">
+                <h1>
+                    Slider 1
+                </h1>
+            </div>
+            <div className="box">
+                <h1>
+                    Slider 2
+                </h1>
+            </div>
+            {/** More Elements*/}
+        </Helios>
+    )
+ }
+```

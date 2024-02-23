@@ -1,0 +1,35 @@
+---
+sidebar_position: 5
+---
+import ExampleColor from "../src/components/exampleColor";
+
+# Color
+
+> with this props you can customize the color of arrows buttons and dots as you like.
+
+<ExampleColor/>
+<br/>
+
+```jsx title="exampleColor.jsx" {6}
+export default function Example() {
+    return (
+        <Helios
+            infinite={true}
+            dots={true}
+            color="#00FF6C"
+        >
+            <div className="box">
+                <h1>
+                    Slider 1
+                </h1>
+            </div>
+            <div className="box">
+                <h1>
+                    Slider 2
+                </h1>
+            </div>
+            {/** More Elements*/}
+        </Helios>
+    )
+ }
+```

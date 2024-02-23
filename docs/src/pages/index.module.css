@@ -1,0 +1,32 @@
+:root {
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #b64936, #fa9600);
+}
+
+.container {
+  padding: 4rem;
+}
+
+.title {
+  color: transparent;
+  background: var(--vp-home-hero-name-background);
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline-block;
+  font-size: 3.250rem;
+}
+
+.subtitle {
+  font-size: 1.550rem;
+  color: #9e9e9e;
+}
+
+.titleInstall {
+  font-weight: 600;
+  font-size: 1.150rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}

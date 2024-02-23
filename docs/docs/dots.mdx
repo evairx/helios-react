@@ -1,0 +1,35 @@
+---
+sidebar_position: 4
+---
+import ExampleDots from "../src/components/exampleDots"
+
+# Dots
+
+> Activating this option will display the Dots in your slider.
+
+<ExampleDots/>
+
+<br/>
+
+```jsx title="exampleDots.jsx" {5}
+export default function Example() {
+    return (
+        <Helios
+            infinite={true}
+            dots={true}
+        >
+            <div className="box">
+                <h1>
+                    Slider 1
+                </h1>
+            </div>
+            <div className="box">
+                <h1>
+                    Slider 2
+                </h1>
+            </div>
+            {/** More Elements*/}
+        </Helios>
+    )
+ }
+```

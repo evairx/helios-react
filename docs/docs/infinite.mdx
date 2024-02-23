@@ -1,0 +1,33 @@
+---
+sidebar_position: 3
+---
+import ExampleInfinite from "../src/components/exampleInfinite"
+
+# Infinite
+> When you put the infinite to your slider it will be in loop mode, 
+> when it reaches the final element it will restart and start again.
+
+<ExampleInfinite/>
+<br/>
+
+```jsx title="exampleInfinite.jsx" {4}
+export default function Example() {
+    return (
+        <Helios
+            infinite={true}
+        >
+            <div className="box">
+                <h1>
+                    Slider 1
+                </h1>
+            </div>
+            <div className="box">
+                <h1>
+                    Slider 2
+                </h1>
+            </div>
+            {/** More Elements*/}
+        </Helios>
+    )
+ }
+```

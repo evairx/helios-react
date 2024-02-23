@@ -1,0 +1,100 @@
+---
+sidebar_position: 8
+---
+import { Example , ExampleCSS } from "../src/components/exampleButtons"
+
+# Custom Buttons 
+
+> You can change the Prev and Next arrows, as you like, as shown in the following example
+
+<Example/>
+
+### 1. First create the functions that will wrap the new buttons
+
+```jsx title="exampleButtons.jsx"
+function CustomNextButton() {
+   return (
+        <div className="next-icon"></div>
+   )
+}
+
+function CustomPrevButton() {
+    return (
+        <div className="prev-icon"></div>
+    )
+ }
+```
+
+```css title="exampleButtons.css"
+.next-icon {
+  width: 64px;
+  height: 64px;
+  background-image: url("data:image/svg+xml,%3Csvg width='64px' height='64px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' transform='rotate(180)'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M15 7L10 12L15 17' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.prev-icon {
+  width: 64px;
+  height: 64px;
+  background-image: url("data:image/svg+xml,%3Csvg width='64px' height='64px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' transform='rotate(0)'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M15 7L10 12L15 17' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+```
+
+### 2. Then pass the functions to the slider using props
+
+```jsx title="exampleButtons.jsx" {4,5}
+export default function ExampleButtons() {
+    return (
+        <Helios
+            nextArrow={{ component: <CustomNextButton /> }}
+            prevArrow={{ component: <CustomPrevButton /> }}
+        >
+            <div className="box">
+                <h1>
+                    Slider 1
+                </h1>
+            </div>
+            <div className="box">
+                <h1>
+                    Slider 2
+                </h1>
+            </div>
+            {/** More Elements*/}
+        </Helios>
+    )
+}
+```
+
+### 3. Custom CSS
+> You can also add custom classes to the buttons, as shown in the following example
+
+<ExampleCSS/>
+<br/>
+
+```jsx title="exampleButtons.jsx" {2,3}
+<Helios
+    nextArrow={{ component: <CustomNextButton />, class: 'your-custom-next-class' }}
+    prevArrow={{ component: <CustomPrevButton />, class: 'your-custom-prev-class' }}
+>
+```
+
+```css title="exampleButtons.css"
+.your-custom-next-class {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.your-custom-prev-class {
+    position: absolute;
+    bottom: 0;
+    right: 44px;
+    cursor: pointer;
+}
+```
