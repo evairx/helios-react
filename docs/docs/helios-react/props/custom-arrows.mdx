@@ -1,9 +1,9 @@
 ---
 sidebar_position: 8
 ---
-import { Example , ExampleCSS } from "../src/components/exampleButtons"
+import { Example , ExampleCSS } from "../../../src/components/exampleButtons"
 
-# Custom Buttons 
+# Custom Arrows
 
 > You can change the Prev and Next arrows, as you like, as shown in the following example
 
@@ -11,7 +11,7 @@ import { Example , ExampleCSS } from "../src/components/exampleButtons"
 
 ### 1. First create the functions that will wrap the new buttons
 
-```jsx title="exampleButtons.jsx"
+```jsx title="customArrows.jsx"
 function CustomNextButton() {
    return (
         <div className="next-icon"></div>
@@ -25,7 +25,7 @@ function CustomPrevButton() {
  }
 ```
 
-```css title="exampleButtons.css"
+```css title="customArrows.css"
 .next-icon {
   width: 64px;
   height: 64px;
@@ -47,7 +47,7 @@ function CustomPrevButton() {
 
 ### 2. Then pass the functions to the slider using props
 
-```jsx title="exampleButtons.jsx" {4,5}
+```jsx title="customArrows.jsx" {4,5}
 export default function ExampleButtons() {
     return (
         <Helios
@@ -76,14 +76,14 @@ export default function ExampleButtons() {
 <ExampleCSS/>
 <br/>
 
-```jsx title="exampleButtons.jsx" {2,3}
+```jsx title="customArrows.jsx" {2,3}
 <Helios
     nextArrow={{ component: <CustomNextButton />, class: 'your-custom-next-class' }}
     prevArrow={{ component: <CustomPrevButton />, class: 'your-custom-prev-class' }}
 >
 ```
 
-```css title="exampleButtons.css"
+```css title="customArrows.css"
 .your-custom-next-class {
     position: absolute;
     bottom: 0;

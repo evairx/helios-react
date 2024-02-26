@@ -1,21 +1,21 @@
 ---
-sidebar_position: 2
+sidebar_position: 6
 ---
-import Slider from "../../src/components/exampleSlider"
+import ExampleWith from "../../../src/components/exampleDots";
 
-# How to use it
-> How to use the slider in a JSX component
+# Width
 
-<Slider/>
+<ExampleWith/>
 <br/>
 
-```jsx title="exampleSlider.jsx" {1,2,6,18}
-   import Helios from "react-helios";
-   import 'helios-react/dist/helios.min.css';
-
+```jsx title="exampleWith.jsx" {6}
 export default function Example() {
     return (
-        <Helios>
+        <Helios
+            infinite={true}
+            dots={true}
+            width="500px"
+        >
             <div className="box">
                 <h1>
                     Slider 1

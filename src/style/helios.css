@@ -97,21 +97,3 @@
 .helios-page.active::before {
     width: 100%;
 }
-
-@media screen and (max-width: 550px) {
-    .helios-container {
-        height: 100vw;
-    }
-}
-  
-@media screen and (max-width: 485px) {
-    .helios-container {
-        height: 120vw;
-    }
-}
-  
-@media screen and (max-width: 390px) {
-    .helios-container {
-        height: 140vw;
-    }
-}

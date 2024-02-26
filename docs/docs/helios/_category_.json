@@ -1,0 +1,10 @@
+{
+    "label": "HeliosJS",
+    "position": 2,
+    "collapsible": true,
+    "collapsed": false,
+    "className": "red",
+    "link": {
+        "type": "generated-index"
+    }
+}

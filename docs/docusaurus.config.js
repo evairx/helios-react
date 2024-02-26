@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Helios React',
-  tagline: 'Helios React',
+  title: 'Helios Slider',
+  tagline: 'Helios Slider for js native and React',
   favicon: 'img/favicon.ico',
 
   url: 'https://evairx.github.io',
@@ -59,7 +59,7 @@ const config = {
         disableSwitch: true,
       },
       navbar: {
-        title: 'Helios React',
+        title: 'Helios Slider',
         items: [
           {
             type: 'docSidebar',
@@ -68,7 +68,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: "https://github.com/evairx",
+            href: "https://github.com/evairx/helios-react",
             position: "right",
             className: "header-github-link",
             "aria-label": "GitHub repository",

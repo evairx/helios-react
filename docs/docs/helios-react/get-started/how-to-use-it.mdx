@@ -1,21 +1,21 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
-import ExampleInfinite from "../src/components/exampleInfinite"
+import Slider from "../../../src/components/exampleSlider"
 
-# Infinite
-> When you put the infinite to your slider it will be in loop mode, 
-> when it reaches the final element it will restart and start again.
+# How to use it
+> How to use the slider in a JSX component
 
-<ExampleInfinite/>
+<Slider/>
 <br/>
 
-```jsx title="exampleInfinite.jsx" {4}
+```jsx title="exampleSlider.jsx" {1,2,6,18}
+   import Helios from "react-helios";
+   import 'helios-react/dist/helios.min.css';
+
 export default function Example() {
     return (
-        <Helios
-            infinite={true}
-        >
+        <Helios>
             <div className="box">
                 <h1>
                     Slider 1

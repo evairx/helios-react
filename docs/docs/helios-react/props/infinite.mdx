@@ -1,32 +1,29 @@
 ---
-sidebar_position: 7
+sidebar_position: 3
 ---
-import ExampleHeight from "../src/components/exampleHeight"
+import ExampleInfinite from "../../../src/components/exampleInfinite"
 
-# Height
+# Infinite
+> When you put the infinite to your slider it will be in loop mode, 
+> when it reaches the final element it will restart and start again.
 
-> Activating this option will display the Dots in your slider.
-
-<ExampleHeight/>
-
+<ExampleInfinite/>
 <br/>
 
-```jsx title="exampleHeight.jsx" {6}
+```jsx title="exampleInfinite.jsx" {4}
 export default function Example() {
     return (
         <Helios
             infinite={true}
-            dots={true}
-            height="500px"
         >
             <div className="box">
                 <h1>
-                    Slider 1 with 500px height
+                    Slider 1
                 </h1>
             </div>
             <div className="box">
                 <h1>
-                    Slider 2 with 500px height
+                    Slider 2
                 </h1>
             </div>
             {/** More Elements*/}

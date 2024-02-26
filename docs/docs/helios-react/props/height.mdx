@@ -1,29 +1,32 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
-import ExampleWith from "../src/components/exampleDots";
+import ExampleHeight from "../../../src/components/exampleHeight"
 
-# Width
+# Height
 
-<ExampleWith/>
+> Activating this option will display the Dots in your slider.
+
+<ExampleHeight/>
+
 <br/>
 
-```jsx title="exampleWith.jsx" {6}
+```jsx title="exampleHeight.jsx" {6}
 export default function Example() {
     return (
         <Helios
             infinite={true}
             dots={true}
-            width="500px"
+            height="500px"
         >
             <div className="box">
                 <h1>
-                    Slider 1
+                    Slider 1 with 500px height
                 </h1>
             </div>
             <div className="box">
                 <h1>
-                    Slider 2
+                    Slider 2 with 500px height
                 </h1>
             </div>
             {/** More Elements*/}
